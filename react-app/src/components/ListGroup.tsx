@@ -4,11 +4,9 @@ function ListGroup() {
     <>
       <h1>Hello Sadik</h1>
       <ul className="list-group">
-        <li className="list-group-item">An 1</li>
-        <li className="list-group-item">A Second Item</li>
-        <li className="list-group-item">A Third Item</li>
-        <li className="list-group-item">A Fourth Item </li>
-        <li className="list-group-item">And A Fifth One</li>
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ul>
     </>
   );
